@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+     >
+
+    <ImageView
+        android:id="@+id/ivReturnedPic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/lout"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tp2" 
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/lout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+    
+       <ImageButton
+        android:id="@+id/ibTakePic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/camera" />
+       
+        <Button
+        android:id="@+id/bSetWall"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Set Wallpaper"
+        android:fadingEdge="vertical" />
+
+</LinearLayout>
+</RelativeLayout>
